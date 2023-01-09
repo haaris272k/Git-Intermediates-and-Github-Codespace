@@ -49,7 +49,7 @@ git add -A (to put multiple files into the staging Area)
 
     (b) git branch -a - check the current working branch
 
-    (c) git checkout 'new_branch_name' - switch the branch
+    (c) git checkout 'new_branch_name' - switch the branch (git checkout - [to switch to the last branch])
 
     (d) git branch -d 'branch' - to delete a branch
 
