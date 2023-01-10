@@ -1,4 +1,4 @@
--- Basics --
+A-> -- Basics --
 
 git config --global user.name "username" (enter the username)
 
@@ -16,13 +16,15 @@ git add -A (to put multiple files into the staging Area)
 
 [Note: if you will make changes on your file even after staging it then it's status will be shown as modified and we will have to again add it to the staging process and then commit it.]
 
--- Necessities --
+B-> -- Basic push cycle --
 
-1.  git commit - commit the changes
+1. git add -A
 
-2.  git push origin "your branch name" - push the changes
+2. git commit -m "any message" - commit the changes
 
--- Intermediates --
+3. git push - push the changes
+
+C-> -- Stash, Branch and Push (Intermediates) --
 
 4.  git diff - to see the modifications made before commit and push
 
@@ -53,11 +55,14 @@ git add -A (to put multiple files into the staging Area)
 
     (e) git merge 'branch name' - to add the changes
 
-7.  (a) About push - It is better to use git push <remote> <branch name> which is an explicit form of pushing the changes to the repo as compared to using simple 'git push'
+7.  (a) About push - It is better to use git push <remote> <branch name> which
+    is an explicit form of pushing the changes to the repo as compared to using simple 'git push'
 
--- Debugging and Logging --
+    (b) git push origin "your branch name" - push the changes
 
-8.  pre commit - tool in python used to notify of any error before commiting the
+D-> -- Debugging and Logging --
+
+8.  pre commit - tool in python used to notify of any error before committing the
     changes refer https://pre-commit.com/
 
     # Installation steps
@@ -66,8 +71,20 @@ git add -A (to put multiple files into the staging Area)
 
     (b) pre-commit install
 
-9.  (a) git log - to view logs
+    (c) Finally, you will be able to see any syntactical error before commiting.
+
+9.  It is best to use log commands the moment when you feel that, you've lost or
+    to know where are you. It could also be used to view when and who made the changes.
+
+    (a) git log - to view logs
 
     (b) git log --oneline - to view logs in concise form
 
     (c) git log --graph --oneline - to get a more detailed view of logs
+
+E-> -- Amend and revert -- (allow us to fix things after we've committed)
+
+10. git commit --amend -m "message" - Amend lets us quicky modify a commit.It
+    can be only used before we have pushed any changes.
+
+    git revert "hash of the commit you want to revert" - Revert simply allows us to revert changes of a commit. It does not delete changes. Get hash of the commit you want to revert then use the commands.
