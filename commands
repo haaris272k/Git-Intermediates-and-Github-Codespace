@@ -1,3 +1,7 @@
+# git commands cheatsheet
+
+# Author @haaris272k
+
 A-> -- Basics --
 
 git config --global user.name "username" (enter the username)
