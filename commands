@@ -75,12 +75,7 @@ D-> -- Debugging and Logging --
 
     (b) pre-commit install
 
-    (c) Finally, you will be able to see any syntactical error before commiting.
-
-9.  It is best to use log commands the moment when you feel that, you've lost or
-    to know where are you. It could also be used to view when and who made the changes.
-
-    (a) git log - to view logs
+9.  (a) git log - to view logs
 
     (b) git log --oneline - to view logs in concise form
 
