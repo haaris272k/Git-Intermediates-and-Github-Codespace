@@ -28,7 +28,7 @@ git add -A (to put multiple files into the staging Area)
 
 4.  git diff - to see the modifications made before commit and push
 
-5.  (a) git stash - to stash the modifications which could later be considered  
+5.  (a) git stash - to stash the modifications which could later be considered
      either to commit and push or delete those modifications. It's just like putting the code in the pocket for a time.
 
     (b) git stash save "name of the stash" - It would work in the same way as
@@ -49,10 +49,19 @@ git add -A (to put multiple files into the staging Area)
 
     (b) git branch -a - check the current working branch
 
-(c) git checkout 'new_branch_name' - switch the branch
+    (c) git checkout 'new_branch_name' - switch the branch
 
     (d) git branch -d 'branch' - to delete a branch
 
     (e) git merge 'branch name' - to add the changes
 
-7. (a) About push - It is better to use git push <remote> <branch name> which is an explicit form of pushing the changes to the repo as compared to using simple 'git push'
+7.  (a) About push - It is better to use git push <remote> <branch name> which is an explicit form of pushing the changes to the repo as compared to using simple 'git push'
+
+-- Debugging and Logging --
+
+8. Git hooks
+
+   pre commit - tool in python used to implement git hooks refer https://pre-commit.com/
+
+   (a) pip install pre-commit
+   (b) pre-commit install
