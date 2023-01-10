@@ -9,4 +9,3 @@ def test(msg):
 message = "This file is meant for testing"
 
 print(test(message))
-pr
