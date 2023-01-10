@@ -49,22 +49,10 @@ git add -A (to put multiple files into the staging Area)
 
     (b) git branch -a - check the current working branch
 
-    (c) git checkout 'new_branch_name' - switch the branch (git checkout - [to switch to the last branch])
+   (c) git checkout 'new_branch_name' - switch the branch
 
     (d) git branch -d 'branch' - to delete a branch
 
     (e) git merge 'branch name' - to add the changes
 
-    (g) If you're merging a new feature into the main branch, you first want to switch to the main branch and then merge into it:
-
-        # ...develop some code...
-
-        $ git add .
-        $ git commit –m "Some commit message"
-        $ git checkout master
-        Switched to branch 'master'
-        $ git merge new-branch
-
-7.  (a) About push - It is better to use git push <remote> <branch name> which is an explicit form of pushing the changes to the repo as compared to using simple 'git push'
-
-8.  git reset --soft HEAD~1 - command to undo the latest commit. The changes will again go back to the staging process. it is only posisble to use this command if they have not been pushed to the cloud yet.
+4. (a) About push - It is better to use git push <remote> <branch name> which is an explicit form of pushing the changes to the repo as compared to using simple 'git push'
