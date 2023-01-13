@@ -86,4 +86,6 @@ E-> -- Amend and revert -- (allow us to fix things after we've committed)
 10. git commit --amend -m "message" - Amend lets us quicky modify a commit.It
     can be only used before we have pushed any changes.
 
-    git revert "hash of the commit you want to revert" - Revert simply allows us to revert changes of a commit. It does not delete changes. Get hash of the commit you want to revert then use the commands.
+            git revert "hash of the commit you want to revert" - Revert simply allows us to revert changes of a commit. It does not delete changes. Get hash of the commit you want to revert then use the commands.
+
+    Tip - use . to open that repository in vs code (online)
